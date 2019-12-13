@@ -12,15 +12,14 @@ c)
 O(n) where 'n' is bunnies
 ## Exercise II
 
+<!-- this will change the length of n in binary search fashion adjusting to middle as needed -->
 check_floor(n, f, low=0)
     middle = n - low // 2
     if f == middle:
         return middle
     else if f > middle:
-        n = middle
-        
+        check_floor(middle, f, low)    
     else 
-        low = middle
-        check_floor(n, f, low)
+        check_floor(n, f, middle)
 
 should have an O(log n) runtime since it's binary search
