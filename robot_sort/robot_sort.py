@@ -114,9 +114,14 @@ class SortingRobot:
                     self.set_light_on()
                     self.swap_item()
                 # if self
+                if self.can_move_right == False:
+                    print('yep')
                 self.move_right()
             # loop back to the beginning
             while self.can_move_left() == True:
+                if self.can_move_right() == False and self.compare_item() == 1:
+                    self.swap_item()
+                    self.set_light_on()
                 self.move_left()
 
 
