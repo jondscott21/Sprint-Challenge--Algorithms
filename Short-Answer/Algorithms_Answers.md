@@ -6,7 +6,7 @@ a)
 O(n) since it's dependant on the size of n * n * n * for number of operations and each step is n * n
 
 b)
-O(n^2) it's two nested looped dependant on 'n' as a end point
+O(log n) it's two nested looped dependant on 'n' as a end point
 
 c)
 O(n) where 'n' is bunnies

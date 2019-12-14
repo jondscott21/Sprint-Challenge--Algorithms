@@ -13,4 +13,4 @@ def count_th(word):
         cache['count'] += 1
     return count_th(word[:-1])
 
-print(count_th(''))
+print(count_th('THtHThth'))
